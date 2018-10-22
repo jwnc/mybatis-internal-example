@@ -2,6 +2,8 @@ package org.github.baker.internal.inter;
 
 import org.github.baker.internal.entity.User;
 
+import java.util.List;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -11,5 +13,7 @@ import org.github.baker.internal.entity.User;
  * @modifytime:
  */
 public interface UserInterface {
-    public User getUser(Long id);
+    public User selectById(Long id);
+
+    List<User> selectAllUser();
 }

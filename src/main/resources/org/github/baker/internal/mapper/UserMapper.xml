@@ -10,7 +10,17 @@
     </resultMap>
     
     
-    <select id="getUser" parameterType="int" resultMap="result">
+    <select id="selectById" parameterType="int" resultMap="result">
         select id,user_name,create_time from t_user where id = #{id}
     </select>
+
+    <select id="selectAllUser"  resultMap="result">
+        select id,user_name,create_time from t_user where id = #{id}
+    </select>
+
+
+
+
+
+
 </mapper>
